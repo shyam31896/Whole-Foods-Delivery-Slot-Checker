@@ -23,7 +23,5 @@ You will need to login once into your Amazon account and proceed until you reach
 ## Powered By:
 
 <p align="center">
-  <a href="https://www.selenium.dev/" target="_blank">
-    <img width="55" height="60" src="https://www.selenium.dev/images/selenium_logo_square_red.png">
-  </a>
+  <a href="https://www.selenium.dev/" target="_blank"><img width="55" height="60" src="https://www.selenium.dev/images/selenium_logo_square_red.png"></a>
 </p>
