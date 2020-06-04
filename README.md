@@ -22,10 +22,6 @@ You will need to login once into your Amazon account and proceed until you reach
 
 ## Powered By:
 
-<a href="https://www.w3schools.com"><img align="left" width="179" height="188" src="https://www.selenium.dev/images/selenium_logo_square_red.png"></a>
-
-[![Selenium](https://www.selenium.dev/images/selenium_logo_square_red.png)](https://www.selenium.dev/)
-
 <p align="center">
-  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+  <a href="https://www.selenium.dev/"><img width="95" height="100" src="https://www.selenium.dev/images/selenium_logo_square_red.png"></a>
 </p>
