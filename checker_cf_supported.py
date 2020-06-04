@@ -7,16 +7,6 @@ import argparse
 import warnings
 warnings.filterwarnings("ignore")
 
-def str2bool(v):
-    if isinstance(v, bool):
-       return v
-    if v.lower() in ('yes', 'true', 't', 'y', '1'):
-        return True
-    elif v.lower() in ('no', 'false', 'f', 'n', '0'):
-        return False
-    else:
-        raise argparse.ArgumentTypeError('Boolean value expected.')
-
 parser = argparse.ArgumentParser()
 parser.add_argument("-b", "--browser", nargs='?', help="Specify the browser to open with")
 args = parser.parse_args()
@@ -35,21 +25,28 @@ def send_email(sender, password, recipient):
     except:
         print("\n <-- E-mail not sent. Something went wrong...! --> \n")
 
-print("\n <-- Collecting details for E-mail notification -->")
-sender = str(input("\nEnter the Sender's email: "))
-password = str(input("Enter Password: "))
-recipient = str(input("Enter the Recipient's email (Can be the same as Sender's email): "))
+def get_email_credentials():
+    print("\n <-- Collecting details for E-mail notification -->")
+    sender = str(input("\nEnter the Sender's email: "))
+    password = str(input("Enter Password: "))
+    recipient = str(input("Enter the Recipient's email (Can be the same as Sender's email): "))
+    return sender, password, recipient
+
 if args.browser == "Chrome":
+    os.system("sudo sh install_chromedriver.sh")
     from selenium.webdriver.chrome.options import Options
     options = Options()
     # options.headless = True
+    sender, password, recipient = get_email_credentials()
     os.system("google-chrome --remote-debugging-port=9000 &")
     options.add_experimental_option("debuggerAddress", "127.0.0.1:9000")
     driver = webdriver.Chrome(chrome_options=options)
 elif args.browser == "Firefox":
+    os.system("sudo sh install_geckodriver.sh")
     from selenium.webdriver.firefox.options import Options
     options = Options()
     # options.headless = True
+    sender, password, recipient = get_email_credentials()
     print("\n <-- Firefox Profile Path required. -->\n <-- Copy and paste the Root Directory path of the default profile. -->\n")
     time.sleep(3)
     os.system("firefox -new-window about:profiles &")
