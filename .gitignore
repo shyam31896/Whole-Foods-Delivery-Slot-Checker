@@ -1,0 +1,3 @@
+# ignore all logs
+*.log
+wf_delivery_slot_checker_test.py
