@@ -1,6 +1,6 @@
 # Whole Foods Delivery Slot Checker
 
-This repository consists of an automated script which identifies the available Delivery slots from Amazon Whole Foods in this time of heavy demand for grocies during the COVID-19 pandemic. This script supports Google Chrome and Mozilla Firefox Web browsers and notifies about the delivery slots (if available) through E-mail. The script will guide you through the required information necessary for the processing, and be sure to look into the Usage examples provided below.
+This repository consists of an automated script which identifies the available Delivery slots from Amazon Whole Foods in this time of heavy demand for groceries during the COVID-19 pandemic. This script supports Google Chrome and Mozilla Firefox Web browsers and notifies about the delivery slots (if available) through E-mail. The script will guide you through the required information necessary for the processing, and be sure to look into the Usage examples provided below.
 
 ## Supporting Platforms:
 
