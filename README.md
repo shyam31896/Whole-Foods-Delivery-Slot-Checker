@@ -4,7 +4,7 @@ This repository consists of an automated script which identifies the available D
 
 ## Supporting Platforms:
 
-Tested on *Linux* and *Windows*. Ongoing Testing for *MacOS*. Releasing soon.
+Tested on *Linux* and *Windows*.
 
 ## Supported Browsers:
 
